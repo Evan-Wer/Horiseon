@@ -13,4 +13,4 @@ https://Evan-Wer.github.io/Horiseon/
 ## Contribution
 Made with ❤️ by Evan
 
-### ©️2019 Run Buddy, Inc 
+### ©️2022 Run Buddy, Inc 
