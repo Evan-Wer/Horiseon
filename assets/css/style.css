@@ -339,17 +339,57 @@ section {
     color: #fce138;
 }
 
+/* Service Grid Styling */
+.services {
+    background: #fce138;
+}
+
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .service-grid-container {
+    background: lightyellow;
+    width: 80%;
     display: grid;
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: 2px solid #024e76;
+    color: #024e76;
+    font-size: 1.2rem;
 }
 
 .service-grid-item {
-    width: 200px;
-    height: 50px;
-    background-color: orange;
-    border: solid;
-    color: black;
+    padding: 15px 0;
+    border: 2px solid #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.service-grid-item.basic {
+    grid-column: 2 / span 1;
+}
+
+.service-grid-item.both {
+    grid-column: 2 / span 2;
+}
+
+.service-grid-item.cancel {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 /* Media Query for smaller Desktop screens and laptops */
 @media screen and (max-width: 980px) {
